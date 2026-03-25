@@ -50,7 +50,8 @@ export default function AdminAnnouncementsPage() {
       }
     }
 
-    const payload = {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const payload: any = {
       title: form.title,
       content: form.content,
       link: form.link || null,
